@@ -106,3 +106,33 @@ a {
     grid-area: footer;
     margin: 5px;
 }
+
+
+/*-------media--------*/
+@media screen and (max-width:800px){
+    .grid-contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 100px auto 150px;
+        grid-template-areas:
+        "header header "
+        "nav nav "
+        "aside aside"
+        "main main"
+        ;
+    }
+}
+
+@media screen and (max-width:450px){
+    .grid-contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 100px auto 150px;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside aside"
+        "main main"
+        ;
+    }
+}
+
+
