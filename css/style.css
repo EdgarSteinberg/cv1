@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 }
 
+
 .grid-contenedor {
     width: 80%;
     margin: 0 auto;
@@ -28,7 +29,9 @@ a {
         "aside footer footer"
     ;
 }
-
+section{
+    background-color: rgba(224, 224, 224, 0.815);
+}
 /*-------HEADER--------*/
 
 .encabezado {
@@ -37,7 +40,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+  
 }
 
 .menu {
@@ -47,8 +50,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
-
+    
 
 }
 
@@ -56,15 +58,16 @@ a {
    
     grid-area: main;
     text-align: center;
-    margin: 5px;
+   
 }
 
 .contenido h3 {
     padding: 15px;
+    
 }
 
 .contenido h4 {
-    margin: 10px;
+    margin: 15px;
     font-size: 20px;
 }
 
@@ -77,6 +80,7 @@ a {
 }
 
 .aside h3 {
+    margin: 5px;
     text-align: center;
     color: white;
 
@@ -86,6 +90,7 @@ a {
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 .aside div ul li a img{
@@ -100,7 +105,9 @@ a {
     padding: 5px;
     margin: 10px;
 }
-
+.aside h3{
+    border : 1px solid rgb(255, 255, 255)
+}
 
 .pie {
     background-color: rgba(224, 224, 224, 0.815);
@@ -111,7 +118,7 @@ a {
 
 /*-------media--------*/
 @media screen and (max-width:800px){
-    .grid-contenedor{
+    .grid-contenedor{ 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 200px 100px auto 150px;
         grid-template-areas:
@@ -121,8 +128,8 @@ a {
         "main main"
         ;
     }
+   
 }
-
 @media screen and (max-width:450px){
     .grid-contenedor{
         grid-template-columns: 1fr 1fr;
