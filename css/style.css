@@ -26,7 +26,7 @@ a {
         "header nav nav"
         "header main main"
         "aside main main"
-        "aside footer footer"
+        "aside main main"
     ;
 }
 section{
@@ -42,22 +42,32 @@ section{
     align-items: center;
   
 }
-
+.encabezado img{
+    border: 1px solid white
+}
+/*---------imagen--------*/
 .menu {
     background-color: rgba(224, 224, 224, 0.815);
     grid-area: nav;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 }
 
-.contenido {
-   
+
+/*-------main---------*/
+.contenido { 
     grid-area: main;
     text-align: center;
+}
+.contenido p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
    
 }
 
@@ -67,16 +77,16 @@ section{
 }
 
 .contenido h4 {
-    margin: 15px;
     font-size: 20px;
 }
 
+
+
+/*---------aside---------------*/
 .aside {
     background-color: rgba(12, 12, 12, 0.719);
     grid-area: aside;
-    display: flex;
-    
-
+   
 }
 
 .aside h3 {
@@ -86,12 +96,15 @@ section{
 
 }
 
-.aside ul {
+
+.aside div ul li{
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center
 
+    
 }
 .aside div ul li a img{
     transition: 1s;
@@ -109,23 +122,20 @@ section{
     border : 1px solid rgb(255, 255, 255)
 }
 
-.pie {
-    background-color: rgba(224, 224, 224, 0.815);
-    grid-area: footer;
-    margin: 5px;
-}
+
 
 
 /*-------media--------*/
 @media screen and (max-width:800px){
     .grid-contenedor{ 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 100px auto 150px;
+        grid-template-rows: 200px 150px auto 200px;
         grid-template-areas:
         "header header "
         "nav nav "
         "aside aside"
         "main main"
+       
         ;
     }
    
