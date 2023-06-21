@@ -115,6 +115,23 @@ section{
 .aside h3{
     border : 1px solid rgb(255, 255, 255)
 }
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ 
+}   
+.imagenes img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    transition: 1s;
+   
+}
+.imagenes img:hover{
+    transform: scale(1.2);
+}
 
 
 
